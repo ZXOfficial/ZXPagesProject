@@ -1,0 +1,20 @@
+@import url(variables.css);
+
+@font-face {
+    font-family: "quickBold";
+    src: url(../storage/fonts/quicksand/Quicksand-Bold.ttf);
+}
+@font-face {
+    font-family: "quickSemiBold";
+    src: url(../storage/fonts/quicksand/Quicksand-SemiBold.ttf);
+}
+@font-face {
+    font-family: "quickRegular";
+    src: url(../storage/fonts/quicksand/Quicksand-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
