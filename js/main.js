@@ -1,6 +1,8 @@
 document.addEventListener("mousemove", function(event) {
     var logo = document.getElementById("logo");
     var clogocont = document.getElementById("mDHC");
+    var bu1 = document.getElementById("b1");
+    var bu2 = document.getElementById("b2");
 
     var mouseX = event.clientX;
     var mouseY = event.clientY;
@@ -24,6 +26,8 @@ document.addEventListener("mousemove", function(event) {
     var offsetY2 = (distanceFromCenterY2 / centerY) * maxOffset2;
 
     logo.style.transform = "translate(" + offsetX + "px, " + offsetY + "px)";
-    clogocont.style.transform = "translate(" + offsetX2 + "px, " + offsetY2 + "px)";
     
+    bu1.style.transform = "translate(" + offsetX2 + "px, " + offsetY2 + "px)";
+    bu2.style.transform = "translate(" + offsetX2 + "px, " + offsetY2 + "px)";
+    clogocont.style.transform = "translate(" + offsetX2 + "px, " + offsetY2 + "px)";
 });
