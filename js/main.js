@@ -13,11 +13,11 @@ document.addEventListener("mousemove", function(event) {
 
     var distanceFromCenterX = centerX - mouseX;
     var distanceFromCenterY = centerY - mouseY;
-    var distanceFromCenterX2 = mouseX - centerX;
-    var distanceFromCenterY2 = mouseY - centerY;
+    var distanceFromCenterX2 = centerX - mouseX;
+    var distanceFromCenterY2 = centerY - mouseY;
 
-    var maxOffset = 20;
-    var maxOffset2 = 10;
+    var maxOffset = 10;
+    var maxOffset2 = 20;
     var offsetX = (distanceFromCenterX / centerX) * maxOffset;
     var offsetY = (distanceFromCenterY / centerY) * maxOffset;
     var offsetX2 = (distanceFromCenterX2 / centerX) * maxOffset2;
@@ -25,4 +25,5 @@ document.addEventListener("mousemove", function(event) {
 
     logo.style.transform = "translate(" + offsetX + "px, " + offsetY + "px)";
     clogocont.style.transform = "translate(" + offsetX2 + "px, " + offsetY2 + "px)";
+    
 });
