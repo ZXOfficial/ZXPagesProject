@@ -104,10 +104,20 @@ body{
     box-shadow: 0px 0px 20px 0px black;
 }
 #b1{
+    transition: 0.2s;
     background-color: var(--color-a2);
 }
 #b2{
+    transition: 0.2s;
     border: 2px solid var(--color-w);
+}
+#b2:hover{
+    border: 2px solid var(--color-w);
+    background-color: var(--color-w);
+    #btext2{
+        color: var(--color-a2);
+        transform: scale(1.1);
+    }
 }
 #btext1{
     color: var(--color-w);
@@ -115,6 +125,7 @@ body{
     font-size: 20px;
 }
 #btext2{
+    transition: 0.2s;
     color: var(--color-w);
     font-family: "quickBold", sans-serif;
     font-size: 20px;

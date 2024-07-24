@@ -1,3 +1,12 @@
+let viewPagesBtn = document.querySelector("#b2");
+
+
+const openGallery = async() => {
+    window.open("../views/gallery.html", "_blank");
+};
+document.openGallery = openGallery;
+
+
 document.addEventListener("mousemove", function(event) {
     var logo = document.getElementById("logo");
     var clogocont = document.getElementById("mDHC");
