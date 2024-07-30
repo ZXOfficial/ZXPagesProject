@@ -36,9 +36,6 @@ body{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
-.footerSection{
-    border: 1px solid var(--color-bg3);
-}
 
 .informationMiniGrid{
     width: 100%;
@@ -87,7 +84,7 @@ body{
     align-items: center;
 }
 #footerLogo{
-    width: 60%;
+    width: 150px;
     filter: invert();
 }
 
@@ -136,7 +133,7 @@ body{
 }
 #infoText{
     color: var(--color-w);
-    font-size: 30px;
+    font-size: 20px;
     font-family: "quickRegular", sans-serif;
 }
 
@@ -262,4 +259,37 @@ body{
     justify-content: left;
     align-items: center;
     padding-left: 20px;
+}
+
+
+
+
+
+
+@media (max-width: 600px) {
+    #mainDiv2{
+        height: calc(200vh + 80px);
+    }
+    #projectInfoDiv{
+        height: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+    #footerGrid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    #footer{
+        height: 66vh;
+    }
+}
+
+@media (max-width: 900px) {
+    #footerGrid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    #footer{
+        height: 66vh;
+    }
 }
