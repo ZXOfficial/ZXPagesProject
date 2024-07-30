@@ -9,7 +9,6 @@ document.openGallery = openGallery;
 
 document.addEventListener("mousemove", function(event) {
     var logo = document.getElementById("logo");
-    var clogocont = document.getElementById("mDHC");
     var bu1 = document.getElementById("b1");
     var bu2 = document.getElementById("b2");
 
@@ -27,7 +26,7 @@ document.addEventListener("mousemove", function(event) {
     var distanceFromCenterX2 = centerX - mouseX;
     var distanceFromCenterY2 = centerY - mouseY;
 
-    var maxOffset = 10;
+    var maxOffset = 14;
     var maxOffset2 = 20;
     var offsetX = (distanceFromCenterX / centerX) * maxOffset;
     var offsetY = (distanceFromCenterY / centerY) * maxOffset;
@@ -38,5 +37,4 @@ document.addEventListener("mousemove", function(event) {
     
     bu1.style.transform = "translate(" + offsetX2 + "px, " + offsetY2 + "px)";
     bu2.style.transform = "translate(" + offsetX2 + "px, " + offsetY2 + "px)";
-    clogocont.style.transform = "translate(" + offsetX2 + "px, " + offsetY2 + "px)";
 });
