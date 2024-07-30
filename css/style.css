@@ -21,38 +21,77 @@
 }
 
 body{
-    position: relative;
-    width: 100vw;
     height: 100vh;
     background-color: var(--color-bg1);
 }
 
-#divLeft{
-    background-color: var(--color-bg2);
+#footer{
+    background-color: var(--color-bg3);
+    width: 100%;
+    height: 300px;
+}
+#footerGrid{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.footerSection{
+    border: 1px solid pink;
+}
+
+.informationMiniGrid{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 20% 80%;
+}
+.informationMGSection{
     display: flex;
-    flex-direction: column;
-    padding: 10px;
-    gap: 10px;
     align-items: center;
-    overflow: hidden;
-    overflow-y: auto;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 100vh;
-    width: 100px;
+    padding-left: 20px;
 }
-.urlIcon{
-    width: 100%;
+.informationMGSection2{
+    padding-left: 20px;
 }
-.urlIcon2{
-    width: 100%;
+
+.footerInfoTitle{
+    color: var(--color-w);
+    font-size: 20px;
+    font-family: "quickSemiBold", sans-serif;
+}
+.footerInfoText{
+    color: var(--color-f1);
+    font-size: 14px;
+    font-family: "quickRegular", sans-serif;
+}
+.footerIcons1{
+    width: 20px;
+    filter: invert();
+    opacity: 60%;
+}
+.footerLines{
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 30px calc(100% - 30px);
+}
+.line{
+    display: flex;
+    align-items: center;
+}
+
+
+
+#fS1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footerLogo{
+    width: 60%;
     filter: invert();
 }
 
-.iconA{
-    width: 50%;
-}
 
 .mainDiv{
     display: grid;
@@ -116,7 +155,6 @@ body{
     background-color: var(--color-w);
     #btext2{
         color: var(--color-a2);
-        transform: scale(1.1);
     }
 }
 #btext1{
@@ -141,14 +179,22 @@ body{
     box-shadow: 0px 0px 20px 1px black;
 }
 #logo{
-    opacity: 40%;
+    opacity: 50%;
     position: absolute;
     margin: 0;
-    height: 240px;
+    height: 340px;
 }
 #logo2{
     filter: invert();
     position: absolute;
     margin: 0;
-    height: 240px;
+    height: 340px;
+}
+
+
+
+
+
+.greenText{
+    color: var(--color-fwh);
 }
