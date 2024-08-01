@@ -2,7 +2,7 @@ let viewPagesBtn = document.querySelector("#b2");
 
 
 const openGallery = async() => {
-    window.open("../../views/gallery.html", "_blank");
+    window.open("../views/gallery.html", "_blank");
 };
 document.openGallery = openGallery;
 
