@@ -125,7 +125,7 @@ body{
 }
 #page{
     height: 80%;
-    width: 60%;
+    width: 300px;
     display: grid;
     grid-template-rows: 80% 20%;
     margin-left: 40px;
